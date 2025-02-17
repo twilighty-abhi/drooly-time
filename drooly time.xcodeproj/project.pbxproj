@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		2A08F79C2D53AE07000313DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A08F7822D53AE05000313DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A08F7892D53AE05000313DD;
+			remoteInfo = "drooly time";
+		};
+		2A08F7A62D53AE07000313DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A08F7822D53AE05000313DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A08F7892D53AE05000313DD;
+			remoteInfo = "drooly time";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A08F78A2D53AE05000313DD /* drooly time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drooly time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A08F79B2D53AE07000313DD /* drooly timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drooly timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A08F7A52D53AE07000313DD /* drooly timeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drooly timeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2A08F78C2D53AE05000313DD /* drooly time */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "drooly time";
+			sourceTree = "<group>";
+		};
+		2A08F79E2D53AE07000313DD /* drooly timeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "drooly timeTests";
+			sourceTree = "<group>";
+		};
+		2A08F7A82D53AE07000313DD /* drooly timeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "drooly timeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A08F7872D53AE05000313DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A08F7982D53AE07000313DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A08F7A22D53AE07000313DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A08F7812D53AE05000313DD = {
+			isa = PBXGroup;
+			children = (
+				2A08F78C2D53AE05000313DD /* drooly time */,
+				2A08F79E2D53AE07000313DD /* drooly timeTests */,
+				2A08F7A82D53AE07000313DD /* drooly timeUITests */,
+				2A08F78B2D53AE05000313DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A08F78B2D53AE05000313DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A08F78A2D53AE05000313DD /* drooly time.app */,
+				2A08F79B2D53AE07000313DD /* drooly timeTests.xctest */,
+				2A08F7A52D53AE07000313DD /* drooly timeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A08F7892D53AE05000313DD /* drooly time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A08F7AF2D53AE07000313DD /* Build configuration list for PBXNativeTarget "drooly time" */;
+			buildPhases = (
+				2A08F7862D53AE05000313DD /* Sources */,
+				2A08F7872D53AE05000313DD /* Frameworks */,
+				2A08F7882D53AE05000313DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2A08F78C2D53AE05000313DD /* drooly time */,
+			);
+			name = "drooly time";
+			packageProductDependencies = (
+			);
+			productName = "drooly time";
+			productReference = 2A08F78A2D53AE05000313DD /* drooly time.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A08F79A2D53AE07000313DD /* drooly timeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A08F7B22D53AE07000313DD /* Build configuration list for PBXNativeTarget "drooly timeTests" */;
+			buildPhases = (
+				2A08F7972D53AE07000313DD /* Sources */,
+				2A08F7982D53AE07000313DD /* Frameworks */,
+				2A08F7992D53AE07000313DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A08F79D2D53AE07000313DD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2A08F79E2D53AE07000313DD /* drooly timeTests */,
+			);
+			name = "drooly timeTests";
+			packageProductDependencies = (
+			);
+			productName = "drooly timeTests";
+			productReference = 2A08F79B2D53AE07000313DD /* drooly timeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A08F7A42D53AE07000313DD /* drooly timeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A08F7B52D53AE07000313DD /* Build configuration list for PBXNativeTarget "drooly timeUITests" */;
+			buildPhases = (
+				2A08F7A12D53AE07000313DD /* Sources */,
+				2A08F7A22D53AE07000313DD /* Frameworks */,
+				2A08F7A32D53AE07000313DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A08F7A72D53AE07000313DD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2A08F7A82D53AE07000313DD /* drooly timeUITests */,
+			);
+			name = "drooly timeUITests";
+			packageProductDependencies = (
+			);
+			productName = "drooly timeUITests";
+			productReference = 2A08F7A52D53AE07000313DD /* drooly timeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A08F7822D53AE05000313DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					2A08F7892D53AE05000313DD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					2A08F79A2D53AE07000313DD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2A08F7892D53AE05000313DD;
+					};
+					2A08F7A42D53AE07000313DD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2A08F7892D53AE05000313DD;
+					};
+				};
+			};
+			buildConfigurationList = 2A08F7852D53AE05000313DD /* Build configuration list for PBXProject "drooly time" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A08F7812D53AE05000313DD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2A08F78B2D53AE05000313DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A08F7892D53AE05000313DD /* drooly time */,
+				2A08F79A2D53AE07000313DD /* drooly timeTests */,
+				2A08F7A42D53AE07000313DD /* drooly timeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A08F7882D53AE05000313DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A08F7992D53AE07000313DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A08F7A32D53AE07000313DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A08F7862D53AE05000313DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A08F7972D53AE07000313DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A08F7A12D53AE07000313DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A08F79D2D53AE07000313DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A08F7892D53AE05000313DD /* drooly time */;
+			targetProxy = 2A08F79C2D53AE07000313DD /* PBXContainerItemProxy */;
+		};
+		2A08F7A72D53AE07000313DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A08F7892D53AE05000313DD /* drooly time */;
+			targetProxy = 2A08F7A62D53AE07000313DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A08F7AD2D53AE07000313DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A08F7AE2D53AE07000313DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2A08F7B02D53AE07000313DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "drooly time/drooly_time.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"drooly time/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drooly time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A08F7B12D53AE07000313DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "drooly time/drooly_time.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"drooly time/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drooly time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2A08F7B32D53AE07000313DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-timeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drooly time.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/drooly time";
+			};
+			name = Debug;
+		};
+		2A08F7B42D53AE07000313DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-timeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/drooly time.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/drooly time";
+			};
+			name = Release;
+		};
+		2A08F7B62D53AE07000313DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-timeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "drooly time";
+			};
+			name = Debug;
+		};
+		2A08F7B72D53AE07000313DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-timeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "drooly time";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A08F7852D53AE05000313DD /* Build configuration list for PBXProject "drooly time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A08F7AD2D53AE07000313DD /* Debug */,
+				2A08F7AE2D53AE07000313DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A08F7AF2D53AE07000313DD /* Build configuration list for PBXNativeTarget "drooly time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A08F7B02D53AE07000313DD /* Debug */,
+				2A08F7B12D53AE07000313DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A08F7B22D53AE07000313DD /* Build configuration list for PBXNativeTarget "drooly timeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A08F7B32D53AE07000313DD /* Debug */,
+				2A08F7B42D53AE07000313DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A08F7B52D53AE07000313DD /* Build configuration list for PBXNativeTarget "drooly timeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A08F7B62D53AE07000313DD /* Debug */,
+				2A08F7B72D53AE07000313DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A08F7822D53AE05000313DD /* Project object */;
+}
