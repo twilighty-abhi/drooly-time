@@ -21,6 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var defaultTime: TimeInterval = 30 * 60  // 30 minutes default
     var player: AVAudioPlayer?
     var isPaused: Bool = false
+    var playPauseMenuItem: NSMenuItem!
     
     // Menu items
     var contextMenu: NSMenu!
@@ -42,12 +43,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func setupContextMenu() {
         contextMenu = NSMenu()
         
+        // Play/Pause Timer option
+        playPauseMenuItem = NSMenuItem(title: "Play", action: #selector(togglePlayPause), keyEquivalent: "p")
+        contextMenu.addItem(playPauseMenuItem)
+        
         // Reset Timer option
         contextMenu.addItem(NSMenuItem(title: "Reset Timer", action: #selector(resetTimer), keyEquivalent: "r"))
         
+        // Custom Timer option
+        contextMenu.addItem(NSMenuItem(title: "Custom Timer...", action: #selector(showCustomTimerDialog), keyEquivalent: "t"))
+        
+        // Separator
+        contextMenu.addItem(NSMenuItem.separator())
+        
         // Preset time options
         let presetMenu = NSMenu()
-        [2, 15, 30, 45, 60].forEach { minutes in
+        [15, 25, 50, 60].forEach { minutes in
             let item = NSMenuItem(title: "\(minutes) minutes", action: #selector(setPresetTime(_:)), keyEquivalent: "")
             item.tag = minutes
             presetMenu.addItem(item)
@@ -62,12 +73,57 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Quit option
         contextMenu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        
+        updatePlayPauseMenuItem() // Initialize menu item state
+    }
+    
+    @objc func showCustomTimerDialog() {
+        let alert = NSAlert()
+        alert.messageText = "Set Custom Timer"
+        alert.informativeText = "Enter time in minutes:"
+        
+        let input = NSTextField(frame: NSRect(x: 0, y: 0, width: 100, height: 24))
+        input.stringValue = "\(Int(defaultTime / 60))"
+        alert.accessoryView = input
+        
+        alert.addButton(withTitle: "OK")
+        alert.addButton(withTitle: "Cancel")
+        
+        if alert.runModal() == .alertFirstButtonReturn {
+            if let minutes = Double(input.stringValue), minutes > 0 {
+                stopTimer()
+                defaultTime = minutes * 60
+                remainingTime = defaultTime
+                isPaused = false
+                startTimer()
+            }
+        }
+    }
+    
+    @objc func togglePlayPause() {
+        if timer != nil || isPaused {
+            togglePause()
+        } else if remainingTime > 0 {
+            startTimer()
+        }
+        updatePlayPauseMenuItem() // Update menu item after toggle
+    }
+    
+    func updatePlayPauseMenuItem() {
+        if timer != nil {
+            playPauseMenuItem.title = "Pause"
+        } else if isPaused {
+            playPauseMenuItem.title = "Resume"
+        } else {
+            playPauseMenuItem.title = "Play"
+        }
     }
     
     @objc func handleButtonClick(_ sender: NSStatusBarButton) {
         guard let event = NSApp.currentEvent else { return }
         
         if event.type == .rightMouseUp {
+            updatePlayPauseMenuItem() // Update before showing menu
             statusItem.menu = contextMenu
             statusItem.button?.performClick(nil)
         } else {
@@ -76,6 +132,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             } else if remainingTime > 0 {
                 startTimer()
             }
+            updatePlayPauseMenuItem() // Update after left click action
         }
     }
     
@@ -91,6 +148,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             isPaused = true
             updateStatusBar()
         }
+        updatePlayPauseMenuItem() // Update after pause state change
     }
     
     @objc func resetTimer() {
@@ -98,6 +156,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         remainingTime = defaultTime
         isPaused = false
         updateStatusBar()
+        updatePlayPauseMenuItem() // Update after reset
     }
     
     @objc func setPresetTime(_ sender: NSMenuItem) {
@@ -106,6 +165,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         remainingTime = defaultTime
         isPaused = false
         startTimer() // Auto-start timer when preset is selected
+        updatePlayPauseMenuItem() // Update after preset selection
     }
 
     func startTimer() {
@@ -114,6 +174,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         updateStatusBar()
+        updatePlayPauseMenuItem() // Update when timer starts
         
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
@@ -124,6 +185,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.stopTimer()
                 self.sendNotification()
                 self.playSound()
+                self.updatePlayPauseMenuItem() // Update when timer completes
             }
         }
     }
@@ -133,7 +195,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         timer = nil
         isPaused = false
         updateStatusBar()
+        updatePlayPauseMenuItem() // Update when timer stops
     }
+    
+    // Rest of the code remains unchanged...
     
     func updateStatusBar() {
         let minutes = Int(remainingTime) / 60
