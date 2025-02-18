@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![macOS](https://img.shields.io/badge/macOS-11.0+-blue.svg)](https://www.apple.com/macos/)
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
-[![GitHub release](https://img.shields.io/github/v/release/yourusername/menubar-timer)](https://github.com/yourusername/menubar-timer/releases)
+[![GitHub release](https://img.shields.io/github/v/release/twilighty-abhi/drooly-time)](https://github.com/twilighty-abhi/drooly-timev/releases)
 
 A sleek and efficient menubar timer for macOS that helps you stay productive without getting in your way.
 
