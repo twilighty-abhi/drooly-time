@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A2885B32D645969000BBB39 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2A2885B22D64595E000BBB39 /* .gitignore */; };
+		2A2885B52D645992000BBB39 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A2885B42D645989000BBB39 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2A08F79C2D53AE07000313DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		2A08F78A2D53AE05000313DD /* drooly time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drooly time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A08F79B2D53AE07000313DD /* drooly timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drooly timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A08F7A52D53AE07000313DD /* drooly timeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drooly timeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2885B22D64595E000BBB39 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2A2885B42D645989000BBB39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,8 @@
 		2A08F7812D53AE05000313DD = {
 			isa = PBXGroup;
 			children = (
+				2A2885B22D64595E000BBB39 /* .gitignore */,
+				2A2885B42D645989000BBB39 /* README.md */,
 				2A08F78C2D53AE05000313DD /* drooly time */,
 				2A08F79E2D53AE07000313DD /* drooly timeTests */,
 				2A08F7A82D53AE07000313DD /* drooly timeUITests */,
@@ -212,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2885B32D645969000BBB39 /* .gitignore in Resources */,
+				2A2885B52D645992000BBB39 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +404,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "drooly time/drooly_time.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"drooly time/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FP3PUGP48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Drooly time";
@@ -406,7 +419,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -420,10 +433,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "drooly time/drooly_time.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"drooly time/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FP3PUGP48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Drooly time";
@@ -433,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Abhiram.drooly-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
