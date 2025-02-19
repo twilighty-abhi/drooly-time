@@ -48,8 +48,7 @@ open MenuBarTimer.xcodeproj
 Then build and run in Xcode (⌘B, ⌘R)
 
 ## Screenshots
-<img width="100" alt="Screenshot 2025-02-19 at 19 00 28" src="https://github.com/user-attachments/assets/9c6ef5ce-2890-4d26-8263-c4dcff615246" />
-<img width="472" alt="Screenshot 2025-02-19 at 19 02 18" src="https://github.com/user-attachments/assets/2d1df6d5-c56b-4b2b-830e-5778e7b1dd24" />
+<img width="291" alt="Screenshot 2025-02-19 at 19 04 09" src="https://github.com/user-attachments/assets/ff9f87e8-b683-43ad-8aa8-e7bdd71a5a27" />
 
 
 
